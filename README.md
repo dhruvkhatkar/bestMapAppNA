@@ -23,3 +23,6 @@ WHY WE CHOSE TO USE CERTAIN LIBRARIES:
 2. Handlebars - a clean organizational way to keep html out of JS files
 3. RequireJS - an organized and easy way to handle dependencies in such a large group of devs
 4. jQuery - so that we dont feel like jumping off a bridge
+
+
+Phil email phil.roy13@gmail.com
