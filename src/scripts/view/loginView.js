@@ -1,4 +1,4 @@
-define(['model/loginModel', 'hbs!templates/topBar'], function(loginModel, tpTopBar) {
+define(['model/loginModel', 'hbs!templates/topBar', 'less!styles/base'], function(loginModel, tpTopBar) {
 
 	var view = Backbone.View.extend({
 

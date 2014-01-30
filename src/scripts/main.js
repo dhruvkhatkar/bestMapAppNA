@@ -5,8 +5,17 @@ require.config({
 		"underscore"	: 	"lib/underscore.1.5.2",
 		"backbone"		: 	'lib/backbone.1.1.0',
 		'utilities'		: 	'lib/utilities', 
-		'hbs'			:   'lib/require-handlebars-plugin/hbs'
+		'hbs'			:   'lib/require-handlebars-plugin/hbs',
+		'styles'		:   '../styles'
 	},
+
+    packages: [
+      {
+        name: 'less',
+        location: 'lib/require-less',
+        main: 'less'
+      }
+    ],
 
 	shim: {
 		underscore: {
