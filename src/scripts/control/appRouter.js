@@ -1,4 +1,4 @@
-define(['model/appModel', 'control/routes/loginRoutes', 'control/routes/defaultRoutes', 'underscore', 'backbone'], function(appModel, loginRoutes, defaultRoutes) {
+define(['model/appModel', 'control/routes/loginRoutes', 'control/routes/mapRoutes' 'control/routes/defaultRoutes', 'underscore', 'backbone'], function(appModel, loginRoutes, mapRoutes, defaultRoutes) {
 	
     // this is the data which the router will be made out of
     var routerData = {
@@ -16,6 +16,7 @@ define(['model/appModel', 'control/routes/loginRoutes', 'control/routes/defaultR
     // before the router backbone template is made, allow additions to the routerData
     loginRoutes(routerData);
     defaultRoutes(routerData);
+    mapRoutes(routerData);
 
     // create and return the singleton router
     var router = Backbone.Router.extend(routerData);
