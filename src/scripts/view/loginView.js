@@ -13,7 +13,7 @@ define(['model/loginModel', 'hbs!templates/topBar', 'less!styles/base'], functio
 		},
 
 		render: function() {
-			this.el.innerHTML = tpTopBar(5);
+			this.el.innerHTML = 'test 123';
 		}
 
 	});

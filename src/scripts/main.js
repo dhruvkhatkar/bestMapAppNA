@@ -6,7 +6,8 @@ require.config({
 		"backbone"		: 	'lib/backbone.1.1.0',
 		'utilities'		: 	'lib/utilities', 
 		'hbs'			:   'lib/require-handlebars-plugin/hbs',
-		'styles'		:   '../styles'
+		'styles'		:   '../styles',
+		'templates'		:   '../templates'
 	},
 
     packages: [
