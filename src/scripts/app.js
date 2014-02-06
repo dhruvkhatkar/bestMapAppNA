@@ -1,5 +1,8 @@
 define(['utilities', 'model/appModel', 'view/topBar', 'less!styles/base', 'less!styles/mainViewContainer'], function(utilities, appModel, topBarView) {
 	
+	// this controller is responsible for overseeing interactions between the main app model and the lowest level UI
+	// this controller is responsible for managing the app router (for navigation)
+
 	var app = function() {
 
 		// tell the app model that we (the super controller) want to know when the main app view changes
@@ -21,13 +24,15 @@ define(['utilities', 'model/appModel', 'view/topBar', 'less!styles/base', 'less!
 
 	}
 
+	// changes the current app view to a new one
 	app.prototype.changeView = function(oldView, newView) {
 		this.mainViewContainer.innerHTML = '';
 		this.mainViewContainer.appendChild(newView.el);
 	}
 
+	// draw the header model
 	app.prototype.drawHeader = function() {
-		var topBar = new topBarView();
+		var topBar = new topBarView({ model: appModel });
 		this.playground.appendChild(topBar.el);
 	}
 

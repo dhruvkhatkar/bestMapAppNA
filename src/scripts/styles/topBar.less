@@ -1,0 +1,30 @@
+@import "colours";
+
+.topBar {
+	background-color: @topBar_BackgroundColour;
+	color: @topBar_defaultColour;
+	padding: 12px;
+	position: relative;
+
+	.fa-bars {
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		right: 0px;
+		width: 50px;
+		line-height: 45px;
+		text-align: center;
+		font-size: 32px;
+		cursor: pointer;
+
+		&:hover {
+			background-color: @topBar_buttonHighlight;
+		}
+
+		&:active {
+			background-color: @topBar_buttonPressed;
+		}
+
+	}
+
+}
